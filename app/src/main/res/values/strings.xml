@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Binga TV</string>
+    <string name="binga_tv">BINGA TV</string>
+    <string name="friday_november_13">Friday, November 13</string>
+    <string name="good_evening">good evening</string>
+    <string name="ready_for_something_good">ready for something good?</string>
+    <string name="_19_04">19:04</string>
+    <string name="wi_fi_status">Wi-Fi status</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="Ready_for_something_good" />
+    <string name="continue_watching">Continue Watching</string>
+    <string name="favorites">Favorites</string>
+</resources>

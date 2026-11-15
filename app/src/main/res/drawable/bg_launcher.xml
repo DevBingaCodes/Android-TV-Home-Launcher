@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base layer: Ultra-deep slate diagonal gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="315"
+                android:startColor="#0D1117"
+                android:centerColor="#07090D"
+                android:endColor="#020305"
+                android:centerY="0.45" />
+        </shape>
+    </item>
+
+    <!-- Accent layer: Subtle slate ambient spotlight from top-left -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="90%p"
+                android:centerX="0.2"
+                android:centerY="0.15"
+                android:startColor="#1A222D3A"
+                android:centerColor="#0811161D"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="420dp"
+    android:layout_height="154dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:background="@drawable/bg_app_card"
+    android:focusable="true"
+    android:clickable="true"
+    android:elevation="6dp"
+    android:stateListAnimator="@animator/card_focus_animator">
+
+    <!-- Content artwork -->
+    <ImageView
+        android:id="@+id/contentPoster"
+        android:layout_width="112dp"
+        android:layout_height="128dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- Content details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/contentSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#A8D8FF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/contentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/contentProgressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#B8B8C5"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/contentProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="#A8D8FF"
+            android:progressBackgroundTint="#55FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
